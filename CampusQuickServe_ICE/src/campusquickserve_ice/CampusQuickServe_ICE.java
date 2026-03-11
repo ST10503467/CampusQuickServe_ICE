@@ -21,6 +21,10 @@ static final double VAT_RATE = 0.15;                                            
         String inputPricePerItem = JOptionPane.showInputDialog("Enter the price per item: ");   // Get price per item ordered.
         double pricePerItem = Double.parseDouble(inputPricePerItem);                            // Convert string into double.
         
+        double subtotal = quantity * pricePerItem;                                              // Calculate subtotal.
+        double vat = subtotal * VAT_RATE;                                                       // Calculate amount of VAT to be paid.
+        double total = subtotal + vat;                                                          // Calculate order total.
+        
         
          
     }
