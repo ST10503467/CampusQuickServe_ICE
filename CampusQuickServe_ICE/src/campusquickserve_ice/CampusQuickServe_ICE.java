@@ -1,20 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package campusquickserve_ice;
 
-/**
- *
- * @author bennj
- */
+import javax.swing.JOptionPane;
+
 public class CampusQuickServe_ICE {
 
-    /**
-     * @param args the command line arguments
-     */
+static final double VAT_RATE = 0.15;                                                            // Declare constant VAT rate
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String name = JOptionPane.showInputDialog("Enter your name:");                          // Get user's name.
+        
+        String studentNumber = JOptionPane.showInputDialog("Enter your Student Number: ");      // Get user's student number.
+        
+        String itemOrdered = JOptionPane.showInputDialog("Enter the item you ordered: ");       // Get user's order item.
+        
+        String inputQuantity = JOptionPane.showInputDialog("Enter the quantity: ");             // Get quantity of item. 
+        int quantity = Integer.parseInt(inputQuantity);                                         // Convert string into integer.
+        
+        String inputPricePerItem = JOptionPane.showInputDialog("Enter the price per item: ");   // Get price per item ordered.
+        double pricePerItem = Double.parseDouble(inputPricePerItem);                            // Convert string into double.
+        
+        
+         
     }
     
 }
