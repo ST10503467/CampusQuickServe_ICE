@@ -25,7 +25,24 @@ static final double VAT_RATE = 0.15;                                            
         double vat = subtotal * VAT_RATE;                                                       // Calculate amount of VAT to be paid.
         double total = subtotal + vat;                                                          // Calculate order total.
         
-        
+        JOptionPane.showMessageDialog(null,
+            "------ CAMPUS QUICKSERVE ------" + "\n" +
+            "\n" +
+            "Customer: " + name + "\n" +
+            "Student Number: " + studentNumber + "\n" +
+            "\n" +
+            "Item Ordered: " + itemOrdered + "\n" +
+            "Quantity: " + quantity + "\n" + 
+            "Price per item: R" + pricePerItem + "\n" +
+            "\n" +
+            "Subtotal: R" + subtotal + "\n" + 
+            "VAT (15%): R" + vat "\n" + 
+            "Total: R" + total + "\n" +
+            "\n" + 
+            "\n" +
+            "Thank you for your odrder!"
+            "\n" +
+            "-----------------------------" );
          
     }
     
